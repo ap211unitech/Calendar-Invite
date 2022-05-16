@@ -1,0 +1,14 @@
+{
+  "name": "calendar-api",
+  "version": "1.0.0",
+  "description": "Generates a google meet link and send it to attendes automatically",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^39.2.0"
+  }
+}
