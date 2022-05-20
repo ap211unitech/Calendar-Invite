@@ -1,0 +1,174 @@
+{
+    "config": {
+        "url": "https://www.googleapis.com/calendar/v3/calendars/primary/events?sendUpdates=all&sendNotifications=true&conferenceDataVersion=1",
+        "method": "POST",
+        "data": {
+            "summary": "Calendar Invitation",
+            "location": "3rd Floor, Ackruti Softech Park, M.I.D.C, Andheri E, Mumbai, Maharashtra 400093",
+            "description": "Generates a google meet link and send it to attendes automatically",
+            "start": {
+                "dateTime": "2022-05-16T09:17:31.599Z",
+                "timeZone": "Asia/Kolkata"
+            },
+            "end": {
+                "dateTime": "2022-05-16T09:47:31.599Z",
+                "timeZone": "Asia/Kolkata"
+            },
+            "attendees": [
+                {
+                    "email": "porwal.1@iitj.ac.in"
+                },
+                {
+                    "email": "porwalarjun95@gmail.com"
+                }
+            ],
+            "reminders": {
+                "useDefault": false,
+                "overrides": [
+                    {
+                        "method": "email",
+                        "minutes": 1440
+                    },
+                    {
+                        "method": "popup",
+                        "minutes": 10
+                    }
+                ]
+            },
+            "conferenceData": {
+                "createRequest": {
+                    "requestId": "random_request_ID",
+                    "conferenceSolutionKey": {
+                        "type": "hangoutsMeet"
+                    }
+                }
+            }
+        },
+        "headers": {
+            "Accept-Encoding": "gzip",
+            "User-Agent": "google-api-nodejs-client/0.7.2 (gzip)",
+            "Authorization": "Bearer ya29.A0ARrdaM_itxGbqPI9cjDqIMGuqAjVIX_OCoZayIr9iuuBblzk4mXBh1DrDM_vXqDuVRvydKt_ANcKsVjddo-G758aGBxKW-iz2s3vwa6MC7ZnxXLp4rf-bmD231UMvNytLQWPEgYYz-yno5wP9MkBHKnt5bZI6Q",
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        "params": {
+            "sendUpdates": "all",
+            "sendNotifications": true,
+            "conferenceDataVersion": 1
+        },
+        "body": "{\"summary\":\"Calendar Invitation\",\"location\":\"3rd Floor, Ackruti Softech Park, M.I.D.C, Andheri E, Mumbai, Maharashtra 400093\",\"description\":\"Generates a google meet link and send it to attendes automatically\",\"start\":{\"dateTime\":\"2022-05-16T09:17:31.599Z\",\"timeZone\":\"Asia/Kolkata\"},\"end\":{\"dateTime\":\"2022-05-16T09:47:31.599Z\",\"timeZone\":\"Asia/Kolkata\"},\"attendees\":[{\"email\":\"porwal.1@iitj.ac.in\"},{\"email\":\"porwalarjun95@gmail.com\"}],\"reminders\":{\"useDefault\":false,\"overrides\":[{\"method\":\"email\",\"minutes\":1440},{\"method\":\"popup\",\"minutes\":10}]},\"conferenceData\":{\"createRequest\":{\"requestId\":\"random_request_ID\",\"conferenceSolutionKey\":{\"type\":\"hangoutsMeet\"}}}}",
+        "responseType": "json"
+    },
+    "data": {
+        "kind": "calendar#event",
+        "etag": "\"3305385032209000\"",
+        "id": "iaqro2vardfmbc6ek0g8l3lg9c",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=aWFxcm8ydmFyZGZtYmM2ZWswZzhsM2xnOWMgYXJqdW4ucEBleHBlcnRyb25zLmNvbQ",
+        "created": "2022-05-16T09:15:15.000Z",
+        "updated": "2022-05-16T09:15:16.242Z",
+        "summary": "Calendar Invitation",
+        "description": "Generates a google meet link and send it to attendes automatically",
+        "location": "3rd Floor, Ackruti Softech Park, M.I.D.C, Andheri E, Mumbai, Maharashtra 400093",
+        "creator": {
+            "email": "arjun.p@expertrons.com",
+            "self": true
+        },
+        "organizer": {
+            "email": "arjun.p@expertrons.com",
+            "self": true
+        },
+        "start": {
+            "dateTime": "2022-05-16T14:47:31+05:30",
+            "timeZone": "Asia/Kolkata"
+        },
+        "end": {
+            "dateTime": "2022-05-16T15:17:31+05:30",
+            "timeZone": "Asia/Kolkata"
+        },
+        "iCalUID": "iaqro2vardfmbc6ek0g8l3lg9c@google.com",
+        "sequence": 0,
+        "attendees": [
+            {
+                "email": "porwal.1@iitj.ac.in",
+                "responseStatus": "needsAction"
+            },
+            {
+                "email": "porwalarjun95@gmail.com",
+                "responseStatus": "needsAction"
+            }
+        ],
+        "hangoutLink": "https://meet.google.com/zat-psep-zwm",
+        "conferenceData": {
+            "createRequest": {
+                "requestId": "random_request_ID",
+                "conferenceSolutionKey": {
+                    "type": "hangoutsMeet"
+                },
+                "status": {
+                    "statusCode": "success"
+                }
+            },
+            "entryPoints": [
+                {
+                    "entryPointType": "video",
+                    "uri": "https://meet.google.com/zat-psep-zwm",
+                    "label": "meet.google.com/zat-psep-zwm"
+                },
+                {
+                    "entryPointType": "more",
+                    "uri": "https://tel.meet/zat-psep-zwm?pin=8314266309524",
+                    "pin": "8314266309524"
+                },
+                {
+                    "regionCode": "US",
+                    "entryPointType": "phone",
+                    "uri": "tel:+1-609-736-2854",
+                    "label": "+1 609-736-2854",
+                    "pin": "461960221"
+                }
+            ],
+            "conferenceSolution": {
+                "key": {
+                    "type": "hangoutsMeet"
+                },
+                "name": "Google Meet",
+                "iconUri": "https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png"
+            },
+            "conferenceId": "zat-psep-zwm"
+        },
+        "reminders": {
+            "useDefault": false,
+            "overrides": [
+                {
+                    "method": "email",
+                    "minutes": 1440
+                },
+                {
+                    "method": "popup",
+                    "minutes": 10
+                }
+            ]
+        },
+        "eventType": "default"
+    },
+    "headers": {
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "connection": "close",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Mon, 16 May 2022 09:15:16 GMT",
+        "etag": "\"3305385032209000\"",
+        "expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+        "pragma": "no-cache",
+        "server": "ESF",
+        "transfer-encoding": "chunked",
+        "vary": "Origin, X-Origin, Referer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "0"
+    },
+    "status": 200,
+    "statusText": "OK"
+}
